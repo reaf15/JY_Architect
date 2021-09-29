@@ -1,0 +1,165 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.container main {
+  flex-grow: 1;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #263343;
+  padding: 8px 12px;
+}
+.navbar_logo {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.navbar_menu li {
+  padding: 8px 40px;
+  list-style: none;
+}
+.navbar_menu li:hover {
+  background-color: #d49466;
+  border-radius: 4px;
+}
+.navbar_icons {
+  list-style: none;
+  color: white;
+  display: flex;
+  padding-left: 0;
+}
+.navbar_icons li {
+  padding: 12px;
+}
+
+footer {
+  border-top: 1px solid rgb(139, 114, 114);
+  background-color: rgb(175, 174, 174);
+}
+.c-footer__address-item {
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  font-size: small;
+  padding: 5px 20px;
+}
+.navbar_toogleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: #d49466;
+}
+
+@media screen and (max-width:800px) {
+  .container {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+  }
+  .navbar_menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar_menu li {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar_icons {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+  .navbar_toogleBtn {
+    display: block;
+  }
+  .navbar_menu.active,
+  .navbar_icons.active {
+    display: flex;
+  }
+}
+h2 {
+  text-align: center;
+}
+#main {
+  background-image: url(/JY_Architect/image/bg.jpg);
+  background-size: cover;
+}
+#main .thumbnails {
+  padding-top: 10px;
+  padding-left: 80px;
+  padding-right: 80px;
+  /* border: greenyellow solid 1px; */
+  display: flex;
+}
+#main .thumbnails>div {
+  /* border: hotpink solid 1px; */
+  flex-grow: 1;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+#main .thumbnails img {
+  width: 100%;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  display: block;
+}
+#main .thumbnails h3{
+  border-left:1px solid rgba(255,255,255,0.3);
+  border-right:1px solid rgba(255,255,255,0.3);
+  border-bottom:1px solid rgba(255,255,255,0.3);
+  border-bottom-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+  padding:1rem;
+  text-align: center;
+  background-color: rgba(255,255,255,0.1);
+  color:white;
+  font-size:0.8rem;
+  font-weight: 200;
+  margin-top: 0;
+}
+#main .thumbnails a{
+  margin-bottom: 1.5rem;
+  display: block;
+}
+.frontpage {
+  background-image: url('https://source.unsplash.com/category/building');
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0.3rem;
+  color: rgb(0, 0, 0);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+}
