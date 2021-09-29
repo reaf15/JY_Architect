@@ -146,10 +146,10 @@ h2 {
   margin-bottom: 1.5rem;
   display: block;
 }
-.frontpage {
-  background-image: url('https://source.unsplash.com/category/building');
+#frontpage {
+  background-image: url('https://source.unsplash.com/category/nature');
   background-size: cover;
-  min-height: 100vh;
+  min-height: 80vh;
   margin: 0;
   display: flex;
   justify-content: center;
