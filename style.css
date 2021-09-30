@@ -149,7 +149,7 @@ h2 {
 #frontpage {
   background-image: url('https://source.unsplash.com/category/nature');
   background-size: cover;
-  min-height: 80vh;
+  min-height: 100%;
   margin: 0;
   display: flex;
   justify-content: center;
