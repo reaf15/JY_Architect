@@ -123,7 +123,7 @@ h2 {
   margin-top: 2rem;
 }
 #main .thumbnails img {
-  width: 100%;
+  width: 50%;
   border-top-left-radius: 0.2rem;
   border-top-right-radius: 0.2rem;
   display: block;
